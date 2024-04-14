@@ -27,6 +27,7 @@ public class MegaControl : MonoBehaviour
         menu.enabled = true;
         play.onClick.AddListener(onPlay);
         bestScore = 0;
+        retry.onClick.AddListener(onRetry);
         retryObject.SetActive(false);
         wait = false;
     }
@@ -51,7 +52,6 @@ public class MegaControl : MonoBehaviour
             best.enabled = true;
             bestText.enabled = true;
             retryObject.SetActive(true);
-            retry.onClick.AddListener(onRetry);
         }
     }
 

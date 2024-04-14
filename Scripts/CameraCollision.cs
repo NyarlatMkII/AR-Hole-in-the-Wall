@@ -20,5 +20,6 @@ public class CameraCollision : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         hasCollided = true;
+        Destroy(other.gameObject);
     }
 }
